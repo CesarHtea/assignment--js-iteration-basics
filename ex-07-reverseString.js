@@ -8,10 +8,24 @@
  *
 */
 
+console.log('====== Ex 07 Match in Array =====')
 
+// entra un string
+// retorna el mismo string ordenados sus elementos en sentido inverso
 
-
-
+function reverseString(stringAReverse) {
+	// rompe el string en un array de letras
+	let reverseWord = ''
+	let arrayTemporal = stringAReverse.split('')
+	let newString = []
+	for (i = (arrayTemporal.length-1) ; i >= 0 ; i-- ) {
+		newString.push(arrayTemporal[i])
+	}
+	reverseWord = newString.join('')
+	return reverseWord
+}
+const printEx07 = reverseString('books')
+console.log(printEx07)
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

@@ -8,8 +8,33 @@
  *
 */
 
+// entra un array de strings
+// retorna los strings que tenga 4 caracteres o menos
 
 
+function shortiesOnly(array) {
+    let nuevoArray = []
+    for (i = 0 ; i < array.length ; i++) {
+        if (array[i].length <= 4) {
+            nuevoArray.push(array[i])
+        } 
+    }
+    return nuevoArray
+}
+const arrayAEvaluar = [
+    "Ed",
+    "Tom",
+    "Elfrid",
+    "Sam",
+    "Bartholomeu",
+    "Wayne",
+    "Theodore",
+    "Ingrid",
+    "Fred",
+    "Yvette"
+]
+const printEx03 = shortiesOnly(arrayAEvaluar)
+console.log(printEx03)
 
 
 

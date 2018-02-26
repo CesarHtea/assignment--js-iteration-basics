@@ -8,7 +8,30 @@
  *
 */
 
+function simpOrSamp(lista) {
 
+	// entra un array
+	// se revisa cada elemento de Array
+	// si array[i] < 6, array[i] + " Sampson"
+	// si array[i] >= 6, array[i] + " Simpson"
+	for (i = 0 ; i < lista.length ; i++) {
+		if (lista[i].length < 6) {
+			lista[i] += " Sampson"
+		} else lista[i] += " Simpson"
+	}
+	return lista
+}
+const listaFox = [
+    "Homer",
+    "OJ",
+    "Marge",
+    "Jessica",
+    "Bart",
+    "Maggie"
+]
+const printEx02 = simpOrSamp(listaFox)
+console.log(printEx02)
+// 
 
 
 
